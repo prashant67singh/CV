@@ -365,9 +365,6 @@
                     $('section').each(function () {
                         var sectionOffset = $(this).offset().top;
                         var sectionHeight = $(this).outerHeight();
-                        console.log("offset->"+sectionOffset);
-                        console.log("height->"+sectionHeight);
-                        console.log("scrollPosition->"+scrollPosition);
                         var totalSectionHeight = sectionOffset + sectionHeight;
                         if (scrollPosition >= sectionOffset && scrollPosition < totalSectionHeight) {
                             var sectionId = $(this).attr('id');
@@ -376,7 +373,6 @@
                             }else{
                                 sectionId="#"+sectionId;
                             }
-                            console.log(sectionId);
                             $('nav li a').removeClass('active');
                             $('nav li a[href="' + sectionId + '"]').addClass('active');
                         }
