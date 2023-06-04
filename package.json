@@ -1,0 +1,26 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Resume with pure css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant67singh/Resume.git"
+  },
+  "author": "prashant singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashant67singh/Resume/issues"
+  },
+  "homepage": "https://github.com/prashant67singh/Resume#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
