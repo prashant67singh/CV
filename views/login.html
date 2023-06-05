@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section class="login-container">
+        <div class="login-form-container">
+            <div class="login-header">
+                <h1>Login Here</h1>
+            </div>
+            <div class="login-form-icon">
+                <img src="/images/hands.png" >
+            </div>
+            <form action="/login" method="post">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>   
+            </footer>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            var openEye = ()=>{
+                $(".login-form-icon img").css("margin-top","70%");
+            }
+
+            var closeEye = ()=>{
+                $(".login-form-icon img").css("margin-top","10px");
+            }
+
+            $('#password').off('click');
+            $('#password').on('click', function(){
+                closeEye();
+            });
+            $('#email').off('click');
+            $('#email').on('click', function(){
+                openEye();
+            });
+
+        });
+    </script>
+</body>
+</html>
