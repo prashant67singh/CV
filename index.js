@@ -12,6 +12,8 @@ app.get("/",(req, res, next)=>{
     res.sendFile(path.join(__dirname,"views","index.html"));
 });
 
+app.get("/")
+
 
 
 
